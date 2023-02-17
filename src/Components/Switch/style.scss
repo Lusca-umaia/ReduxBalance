@@ -1,0 +1,47 @@
+.sectionSwitch {
+    position: fixed;
+    right: 30px;
+    bottom: 2%;
+
+    label {
+        cursor: pointer;
+
+        div {
+            width: 80px;
+            height: 45px;
+            border-radius: 20px;
+            display: flex;
+            position: relative;
+            background-color: bisque;
+            align-items: center;
+            border: 3px solid #c07575;
+            transition: .3s all;
+
+            .boxButton {
+                transition: 1s all;
+                height: 30px;
+                left: 5px;
+                border: 3px solid #c07575;
+                position: absolute;
+                width: 30px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+        }
+
+        .checkbox {
+            display: none;
+        }
+
+        .checkbox:checked~div>.boxButton {
+            border-color: #b7b7b7;
+            left: 40px !important;
+        }
+
+        .checkbox:checked~div {
+            border-color: #b7b7b7;
+            background-color: #000;
+        }
+    }
+}
