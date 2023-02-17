@@ -1,0 +1,22 @@
+.inputContainer {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+
+    input {
+        width: 300px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        outline: none;
+        border-radius: 15px;
+        border: 4px solid bisque;
+        padding: 3px 13px;
+    }
+
+    #inputDark {
+        background-color: #000;
+        color: #FFF;
+        border-color: #FFF;
+    }
+}

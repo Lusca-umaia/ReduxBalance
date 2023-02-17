@@ -1,0 +1,36 @@
+.groupButtons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        padding: 15px 20px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 6px solid bisque;
+        color: #c07575;
+        font-size: 1.4em;
+        min-width: 300px;
+        font-weight: 700;
+        background-color: bisque;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: .6s all;
+
+        &:hover {
+            background-color: transparent;
+            transform: scale(1.04);
+        }
+
+        &:disabled {
+            opacity: .6;
+        }
+    }
+
+    #buttonDark {
+        background-color: black;
+        color: #FFF;
+        border-color: #FFF;
+    }
+}
